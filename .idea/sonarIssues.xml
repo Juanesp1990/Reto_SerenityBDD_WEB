@@ -8,6 +8,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../RetoFrameworkSofka/src/main/resources/properties/configuration.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/build.gradle">
           <value>
             <set />
@@ -124,6 +129,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/java/co/com/sofka/runner/automationpractice/AutomationPracticeTestCucumber.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinition/Setup.java">
           <value>
             <set />
           </value>

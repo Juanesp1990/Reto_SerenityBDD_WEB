@@ -11,7 +11,7 @@ public class AutomationPracticeRegister extends PageObject {
             .the("Fill email create")
             .located(By.id("email_create"));
 
-    public static final Target BUTTON_CREATE_ACCONT= Target
+    public static final Target BUTTON_CREATE_ACCONT = Target
             .the("Button create accont")
             .located(By.id("SubmitCreate"));
 
@@ -39,7 +39,7 @@ public class AutomationPracticeRegister extends PageObject {
             .the("Fill state")
             .located(By.id("id_state"));
 
-    public static final Target STATE_FLORIDA =Target
+    public static final Target STATE_FLORIDA = Target
             .the("State florida")
             .located(By.xpath("//option[contains(text(),'Florida')]"));
 
@@ -56,7 +56,7 @@ public class AutomationPracticeRegister extends PageObject {
             .located(By.id("submitAccount"));
 
     /*for validations*/
-public static final Target CUSTOMER_ACCOUNT =Target
+    public static final Target CUSTOMER_ACCOUNT = Target
             .the("Customer account sucesfull")
             .located(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a/span"));
 

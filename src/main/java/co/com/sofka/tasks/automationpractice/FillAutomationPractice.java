@@ -14,12 +14,12 @@ public class FillAutomationPractice implements Task {
     private String message;
 
     public FillAutomationPractice withEmail (String email) {
-        this.email=email;
+        this.email = email;
         return this;
     }
 
     public FillAutomationPractice withMessage (String message) {
-        this.message=message;
+        this.message = message;
         return this;
     }
 
@@ -37,7 +37,7 @@ public class FillAutomationPractice implements Task {
 
     }
 
-    public static FillAutomationPractice fillAutomationPractice() {
+    public static FillAutomationPractice fillAutomationPractice () {
         return new FillAutomationPractice();
 
     }

@@ -24,7 +24,7 @@ public class AutomationPracticeSignIn extends PageObject {
 
     /*for validations*/
 
-    public static final Target MESSAGE_VALIDATION_SIGN_IN= Target
+    public static final Target MESSAGE_VALIDATION_SIGN_IN = Target
             .the("Message validation Sign In")
             .located(By.xpath("//*[@id=\"center_column\"]/div[1]/ol/li"));
 }

@@ -20,42 +20,42 @@ public class FillRegisterSuccess implements Task {
     private String mobilePhone;
 
     public FillRegisterSuccess wasFilledFirstName (String firstName) {
-        this.firstName= firstName;
+        this.firstName = firstName;
         return this;
     }
 
     public FillRegisterSuccess andWithLastName (String lastName) {
-        this.lastName= lastName;
+        this.lastName = lastName;
         return this;
     }
 
     public FillRegisterSuccess andWithEmail (String email) {
-        this.email=email;
+        this.email = email;
         return this;
     }
 
     public FillRegisterSuccess andWithPassword (String password) {
-        this.password=password;
+        this.password = password;
         return this;
     }
 
     public FillRegisterSuccess andWithAddress (String address) {
-        this.address=address;
+        this.address = address;
         return this;
     }
 
     public FillRegisterSuccess andWithCity (String city) {
-        this.city=city;
+        this.city = city;
         return this;
     }
 
     public FillRegisterSuccess andWithCodePostal (String codePostal) {
-        this.codePostal=codePostal;
+        this.codePostal = codePostal;
         return this;
     }
 
     public FillRegisterSuccess andWithMobilePhone (String mobilePhone) {
-        this.mobilePhone=mobilePhone;
+        this.mobilePhone = mobilePhone;
         return this;
     }
 
@@ -83,7 +83,8 @@ public class FillRegisterSuccess implements Task {
         );
 
     }
-    public static FillRegisterSuccess fillRegisterSuccess(){
+
+    public static FillRegisterSuccess fillRegisterSuccess () {
         return new FillRegisterSuccess();
     }
 }

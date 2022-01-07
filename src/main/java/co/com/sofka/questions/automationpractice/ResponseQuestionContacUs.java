@@ -6,13 +6,13 @@ import net.serenitybdd.screenplay.Question;
 
 import static co.com.sofka.userinterfaces.automationpractice.AutomationPracticeContacUs.MESSAGE_ERROR;
 
-public class ResponseQuestionContacUs implements Question {
+public class ResponseQuestionContacUs implements Question<Boolean> {
     @Override
     public Boolean answeredBy (Actor actor) {
-         return (MESSAGE_ERROR.resolveFor(actor).containsOnlyText("The message cannot be blank."));
+        return (MESSAGE_ERROR.resolveFor(actor).containsOnlyText("The message cannot be blank."));
     }
 
-    public static ResponseQuestionContacUs responseQuestionContacUs(){
+    public static ResponseQuestionContacUs responseQuestionContacUs () {
         return new ResponseQuestionContacUs();
     }
 }

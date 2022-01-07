@@ -13,12 +13,12 @@ public class FillSignInFail implements Task {
     private String password;
 
     public FillSignInFail withEmail (String email) {
-        this.email=email;
+        this.email = email;
         return this;
     }
 
     public FillSignInFail withPassword (String password) {
-        this.password=password;
+        this.password = password;
         return this;
     }
 
@@ -33,7 +33,7 @@ public class FillSignInFail implements Task {
 
     }
 
-    public static FillSignInFail fillSignInFail(){
+    public static FillSignInFail fillSignInFail () {
         return new FillSignInFail();
     }
 }

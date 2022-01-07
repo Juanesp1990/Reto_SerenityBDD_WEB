@@ -19,7 +19,7 @@ public class BrowseToSingIn implements Task {
     }
 
 
-    public static BrowseToSingIn browseToSingIn (){
+    public static BrowseToSingIn browseToSingIn () {
         return new BrowseToSingIn();
     }
 }

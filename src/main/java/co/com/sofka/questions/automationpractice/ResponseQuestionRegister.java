@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.Question;
 
 import static co.com.sofka.userinterfaces.automationpractice.AutomationPracticeRegister.CUSTOMER_ACCOUNT;
 
-public class ResponseQuestionRegister implements Question <Boolean>{
+public class ResponseQuestionRegister implements Question<Boolean> {
 
     private String firstname;
     private String lastname;
@@ -22,10 +22,10 @@ public class ResponseQuestionRegister implements Question <Boolean>{
 
     @Override
     public Boolean answeredBy (Actor actor) {
-        return (CUSTOMER_ACCOUNT.resolveFor(actor).containsOnlyText(firstname+" "+lastname));
+        return (CUSTOMER_ACCOUNT.resolveFor(actor).containsOnlyText(firstname + " " + lastname));
     }
 
-    public static ResponseQuestionRegister responseQuestionRegister(){
+    public static ResponseQuestionRegister responseQuestionRegister () {
         return new ResponseQuestionRegister();
     }
 }

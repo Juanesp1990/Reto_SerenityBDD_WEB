@@ -7,6 +7,8 @@ import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.log4j.Logger;
+import org.assertj.core.api.Assertions;
 
 import java.util.Locale;
 
@@ -21,91 +23,133 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class SingInStepDefinition extends Setup {
-
+    public static Logger LOGGER = Logger.getLogger(ContacUsStepDefinition.class);
     private static final String ACTOR_NAME = "Juanes";
-    private SignIn signIn;
     private Register register;
 
     @Given("el cliente se encuentra en la página inicial de automatización")
-    public void elClienteSeEncuentraEnLaPáginaInicialDeAutomatización () {
-        actorSetupTheBrowser(ACTOR_NAME);
-        theActorInTheSpotlight().wasAbleTo(
-                openPageInit()
-        );
+    public void elClienteSeEncuentraEnLaPaginaInicialDeAutomatizacion () {
+        try {
+            actorSetupTheBrowser(ACTOR_NAME);
+            theActorInTheSpotlight().wasAbleTo(
+                    openPageInit()
+            );
+        } catch (Exception e) {
+            LOGGER.warn(e.getMessage());
+            Assertions.fail("");
+        }
 
     }
 
     @When("el cliente navega hasta la opcion de inicio de sesión")
-    public void elClienteNavegaHastaLaOpcionDeInicioDeSesión () {
-        theActorInTheSpotlight().attemptsTo(
-                browseToSingIn()
-        );
+    public void elClienteNavegaHastaLaOpcionDeInicioDeSesion () {
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    browseToSingIn()
+            );
+        } catch (Exception e) {
+            LOGGER.warn(e.getMessage());
+            Assertions.fail("");
+        }
 
     }
 
     @When("ingresa datos que no están registrados")
-    public void ingresaDatosQueNoEstánRegistrados () {
-        signIn = new SignIn();
+    public void ingresaDatosQueNoEstanRegistrados () {
+        SignIn signIn;
         signIn = fillSignIn();
-        theActorInTheSpotlight().attemptsTo(
-                fillSignInFail()
-                        .withEmail(signIn.getEmail())
-                        .withPassword(signIn.getPassword())
-        );
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    fillSignInFail()
+                            .withEmail(signIn.getEmail())
+                            .withPassword(signIn.getPassword())
+            );
+        } catch (Exception e) {
+            LOGGER.warn(e.getMessage());
+            Assertions.fail("");
+        }
 
     }
 
     @Then("la página deberá mostrar un mensaje de ingreso fallido")
-    public void laPáginaDeberáMostrarUnMensajeDeIngresoFallido () {
-        theActorInTheSpotlight().should(
-                seeThat(responseQuestionSignInFail(), equalTo(true))
-        );
+    public void laPaginaDeberaMostrarUnMensajeDeIngresoFallido () {
+        try {
+            theActorInTheSpotlight().should(
+                    seeThat(responseQuestionSignInFail(), equalTo(true))
+            );
+            LOGGER.info("Comparación Exitosa");
+        } catch (Exception e) {
+            LOGGER.warn(e.getMessage());
+            Assertions.fail("");
+        }
 
     }
 
     @Given("el cliente se encuentra en la página principal")
-    public void elClienteSeEncuentraEnLaPáginaPrincipal () {
-        actorSetupTheBrowser(ACTOR_NAME);
-        theActorInTheSpotlight().wasAbleTo(
-                openPageInit()
-        );
+    public void elClienteSeEncuentraEnLaPaginaPrincipal () {
+        try {
+            actorSetupTheBrowser(ACTOR_NAME);
+            theActorInTheSpotlight().wasAbleTo(
+                    openPageInit()
+            );
+        } catch (Exception e) {
+            LOGGER.warn(e.getMessage());
+            Assertions.fail("");
+        }
     }
 
     @When("el cliente navega hasta inicio de sesión")
-    public void elClienteNavegaHastaInicioDeSesión () {
-        theActorInTheSpotlight().attemptsTo(
-                browseToSingIn()
-        );
+    public void elClienteNavegaHastaInicioDeSesion () {
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    browseToSingIn()
+            );
+        } catch (Exception e) {
+            LOGGER.warn(e.getMessage());
+            Assertions.fail("");
+        }
 
     }
 
     @When("selecciona registrarse, llenar su información y presiona registrarse")
-    public void seleccionaRegistrarseLlenarSuInformaciónYPresionaRegistrarse () {
+    public void seleccionaRegistrarseLlenarSuInformacionYPresionaRegistrarse () {
         register = new Register();
         register = fillRegister();
-        theActorInTheSpotlight().attemptsTo(
-                fillRegisterSuccess()
-                        .wasFilledFirstName(register.getFirstName())
-                        .andWithLastName(register.getLastName())
-                        .andWithEmail(register.getEmail())
-                        .andWithPassword(register.getPassword())
-                        .andWithAddress(register.getAddress())
-                        .andWithCity(register.getCity())
-                        .andWithCodePostal(register.getCodePostal())
-                        .andWithMobilePhone(register.getMobilePhone())
-        );
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    fillRegisterSuccess()
+                            .wasFilledFirstName(register.getFirstName())
+                            .andWithLastName(register.getLastName())
+                            .andWithEmail(register.getEmail())
+                            .andWithPassword(register.getPassword())
+                            .andWithAddress(register.getAddress())
+                            .andWithCity(register.getCity())
+                            .andWithCodePostal(register.getCodePostal())
+                            .andWithMobilePhone(register.getMobilePhone())
+            );
+
+        } catch (Exception e) {
+            LOGGER.warn(e.getMessage());
+            Assertions.fail("");
+        }
 
     }
 
     @Then("la página deberá mostrar el nombre registrado en la parte superior de la página")
-    public void laPáginaDeberáMostrarElNombreRegistradoEnLaParteSuperiorDeLaPágina () {
-        theActorInTheSpotlight().should(
-                seeThat(
-                        responseQuestionRegister()
-                                .wasFilledFirstname(register.getFirstName())
-                                .andWhitLastname(register.getLastName()),equalTo(true)
-                )
-        );
+    public void laPaginaDeberaMostrarElNombreRegistradoEnLaParteSuperiorDeLaPagina () {
+        try {
+            theActorInTheSpotlight().should(
+                    seeThat(
+                            responseQuestionRegister()
+                                    .wasFilledFirstname(register.getFirstName())
+                                    .andWhitLastname(register.getLastName()), equalTo(true)
+                    )
+            );
+            LOGGER.info("Comparación Exitosa");
+        } catch (Exception e) {
+            LOGGER.warn(e.getMessage());
+            Assertions.fail("");
+        }
 
     }
 
