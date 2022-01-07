@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.com.sofka.runner.automationpractice.AutomationPracticeTestCucumber" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-NVQ65STN" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+?[33mUndefined scenarios:?[0m
+?[33mfile:///C:/Users/JUANES/Desktop/Semana%20de%20Retos/RetoSerenityBddGui/src/test/resources/features/automationpractice/contacUs.feature:7?[0m# informacion incompleta
+?[33mfile:///C:/Users/JUANES/Desktop/Semana%20de%20Retos/RetoSerenityBddGui/src/test/resources/features/automationpractice/contacUs.feature:14?[0m# informacion completa
+?[33mfile:///C:/Users/JUANES/Desktop/Semana%20de%20Retos/RetoSerenityBddGui/src/test/resources/features/automationpractice/signIn.feature:7?[0m# Ingreso fallido
+?[33mfile:///C:/Users/JUANES/Desktop/Semana%20de%20Retos/RetoSerenityBddGui/src/test/resources/features/automationpractice/signIn.feature:14?[0m# Ingreso exitoso
+
+4 Scenarios (?[33m4 undefined?[0m)
+16 Steps (?[33m16 undefined?[0m)
+0m0,721s
+
+
+You can implement missing steps with the snippets below:
+
+@Given("el cliente se encuentra en la página de inicio")
+public void elClienteSeEncuentraEnLaPáginaDeInicio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("el cliente navega hasta el formulario de contáctenos")
+public void elClienteNavegaHastaElFormularioDeContáctenos() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("ingresa la información incompleta y presiona el botón enviar")
+public void ingresaLaInformaciónIncompletaYPresionaElBotónEnviar() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Then("la página debería mostrar un mensaje de error")
+public void laPáginaDeberíaMostrarUnMensajeDeError() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("el clientre se encuentra en la página inicial")
+public void elClientreSeEncuentraEnLaPáginaInicial() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("el cliente navega hasta la opción contáctenos")
+public void elClienteNavegaHastaLaOpciónContáctenos() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("ingresa la información completa y presiona el botón enviar")
+public void ingresaLaInformaciónCompletaYPresionaElBotónEnviar() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Then("la página debería indicarle la recepción del mensaje")
+public void laPáginaDeberíaIndicarleLaRecepciónDelMensaje() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("el cliente se encuentra en la página inicial de automatización")
+public void elClienteSeEncuentraEnLaPáginaInicialDeAutomatización() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("el cliente navega hasta la opcion de inicio de sesión")
+public void elClienteNavegaHastaLaOpcionDeInicioDeSesión() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("ingresa datos que no están registrados")
+public void ingresaDatosQueNoEstánRegistrados() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Then("la página deberá mostrar un mensaje de ingreso fallido")
+public void laPáginaDeberáMostrarUnMensajeDeIngresoFallido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("el cliente se encuentra en la página principal")
+public void elClienteSeEncuentraEnLaPáginaPrincipal() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("el cliente navega hasta inicio de sesión")
+public void elClienteNavegaHastaInicioDeSesión() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("selecciona registrarse, llenar su información y presiona registrarse")
+public void seleccionaRegistrarseLlenarSuInformaciónYPresionaRegistrarse() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Then("la página deberá mostrar el nombre registrado en la parte superior de la página")
+public void laPáginaDeberáMostrarElNombreRegistradoEnLaParteSuperiorDeLaPágina() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+]]></system-out>
+  <system-err><![CDATA[log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+]]></system-err>
+</testsuite>

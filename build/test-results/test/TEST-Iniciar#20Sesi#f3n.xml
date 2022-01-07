@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Iniciar Sesión" tests="2" skipped="2" failures="0" errors="0" timestamp="2022-01-06T15:26:30" hostname="LAPTOP-NVQ65STN" time="0.048">
+  <properties/>
+  <testcase name="Ingreso fallido" classname="Iniciar Sesión" time="0.022">
+    <skipped/>
+  </testcase>
+  <testcase name="Ingreso exitoso" classname="Iniciar Sesión" time="0.025">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
